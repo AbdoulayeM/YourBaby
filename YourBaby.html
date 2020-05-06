@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="YourBaby.css"/>
+        <title>YourBaby</title>
+    </head>
+
+    <body>
+        <main id="contenu" >
+            <header class="header">
+                <h1 id="title" class="text-center">YourBaby  - Choose the name of your Baby</h1>
+                <p id="description" class="description text-center">Le nom de votre bébé est un cadeau important pour sa vie, choississez le bien</p>
+            </header>
+
+            <form id="babysurvey" action="get" method="POST">
+
+                <div class="datagroup">
+                    <label id="name">Name</label>
+                    <input type="text" name="name" id="nom" placeholder="Voulez-vous entrez votre nom?"/>
+                </div>
+
+                <div class="datagroup">
+                    <label id="Region">Région d'origine</label>
+                    <input type="text" name="region" id="region" placeholder="Voulez-vous entrez votre région d'origine?"/>
+                </div>
+
+                <div class="datagroup">
+                    <p id="sexe">Le sexe de votre bébé :</p>
+                    <label><input type="radio" name="sexe"  value="Garçon" class="radio"/>Garçon</label>
+                    <label><input type="radio" name="sexe" value="Fille" class="radio"/>Fille</label>
+                </div>
+
+                <div id="datagroup">
+                    <p>Quelle religion pratiquez vous?</p>
+                    <select class="dropdown" name="religion" class="control" required>
+                        <option disabled selected value>Indiquer une préférence religieuse</option>
+                        <option value="Chrétien">Christianisme</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Juif">Judaïsme</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
+
+               <div class="datagroup">
+                   <p>Quelle réference linguistique voulez-vous ?</p>
+                   <select class="dropdown" name="Langue" class="control" required>
+                       <option disabled selected value>Indiquez un groupe linguistique</option>
+                       <option value="latine">Langues latines(espagnol, français...)</option>
+                       <option value="germain">Langues Germanophones(allemand...)</option>
+                       <option value="anglo">Langues anglo-saxones</option>
+                       <option value="arabe">Langue Arabe</option>
+                       <option value="afrique">Langues Africaines</option>
+                   </select>
+               </div>
+
+               <div class="datagroup">
+                   <label>Par quelle lettre le prénom peut-il commencer ?</label>
+                       <input type="text" class="datagroup" value="lettre" placeholder="veuillez indiquer une lettre"/>
+               </div>
+
+               <button value="submit" type="submit">Envoyer</button>
+                
+            </form>
+
+        </main>
+            <section id="infos" class="grid">
+                
+                <div class="box">
+                    <h2 class="boxtitle">Nous contactez</h2>
+                    <p>contact@acmewebsolutions.test</p>
+                </div>
+                <div class="box">
+                    <h2 class="boxtitle">En savoir plus</h2>
+                    <p>YourBaby est une solution conçue par des étudiants de l'IUT de Douala 
+                        avec pour but de faciliter la recherche de prénom pour les futurs bébés.
+                    Cette solution s'inscrit donc dans un cadre d'apprentissage mais aussi dans un désir de service commun de la part de ces étudiants</p>
+                </div>
+    
+        </section>
+
+                <footer class="grid">
+                    <div><p>YourBaby : A baby chooser name solution</p></div>
+                    <div><p>Powered by Didactic Inc.</p></div>
+                </footer>
+        
+        
+    </body>
+</html>
