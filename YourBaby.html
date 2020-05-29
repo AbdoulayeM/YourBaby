@@ -13,7 +13,11 @@
                 <p id="description" class="description text-center">Le nom de votre bébé est un cadeau important pour sa vie, choississez le bien</p>
             </header>
 
+            <!-- formulaire englobant pour la selection des prénoms de Bébés-->
+
             <form id="babysurvey" action="get" method="POST">
+
+                <!-- le formulaire intègre un regroupement multiple entre les datagroup qui sert à classer les champs de saisie-->
 
                 <div class="datagroup">
                     <label id="name">Name</label>
@@ -44,7 +48,7 @@
 
                <div class="datagroup">
                    <p>Quelle réference linguistique voulez-vous ?</p>
-                   <select class="dropdown" name="Langue" class="control" required>
+                   <select class="dropdown control" name="Langue" required>
                        <option disabled selected value>Indiquez un groupe linguistique</option>
                        <option value="latine">Langues latines(espagnol, français...)</option>
                        <option value="germain">Langues Germanophones(allemand...)</option>
@@ -63,7 +67,9 @@
                 
             </form>
 
-        </main>
+        </main> 
+
+        <!-- partie hors formulaire qui sert à fournir des informations complémentaires sur la production du travail-->
             <section id="infos" class="grid">
                 
                 <div class="box">
